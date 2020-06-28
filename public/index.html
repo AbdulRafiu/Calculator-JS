@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <h1> Basic Calculator</h1>
+        <div class="input">
+            <input id="input" type="text">
+        </div>
+        <div class="clear">
+            <button class="halfButton" onclick="clearInput()">AC</button>
+            <button onclick="getOperator('/')">/</button>
+            <button onclick="getNum('.')">.</button>
+        </div>
+        <div class="periodOne">
+            <button onclick="getNum('7')">7</button>
+            <button onclick="getNum('8')">8</button>
+            <button onclick="getNum('9')">9</button>
+            <button onclick="getOperator('X')">X</button>
+        </div>
+        <div class="periodTwo">
+            <button onclick="getNum('4')">4</button>
+            <button onclick="getNum('5')">5</button>
+            <button onclick="getNum('6')">6</button>
+            <button onclick="getOperator('-')">-</button>
+        </div>
+        <div class="periodThree">
+            <button onclick="getNum('1')">1</button>
+            <button onclick="getNum('2')">2</button>
+            <button onclick="getNum('3')">3</button>
+            <button onclick="getOperator('+')">+</button>
+        </div>
+        <div class="periodFour">
+            <button class="halfButton" onclick="getNum('0')">0</button>
+            <button class="halfButton" onclick="getResult()">=</button>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
